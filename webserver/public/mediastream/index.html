@@ -27,7 +27,31 @@
         <select id="video_input"></select>
 
     </div>
-    <video autoplay playsinline id="player" src="https://v.qq.com/x/page/v0020ywhz68.html"></video>
+
+    <div>
+        <button id="take_photo">Take Photo</button>
+    </div>
+
+    <video autoplay playsinline id="player"></video>
+    <video playsinline id="rec_player"></video>
+    <table>
+        <tr>
+            <td><button id="record">Start Record</button></td>
+            <td><button id="rec_play" disabled>Play</button></td>
+            <td><button id="rec_download" disabled>Download</button></td>
+        </tr>
+
+    </table>
+    <audio autoplay controls id="audio_player"></audio>
+
+    <div>
+
+        <div id="constants"></div>
+
+    </div>
+    <div>
+        <canvas id="picture"></canvas>
+    </div>
     <script src="./js/client.js"></script>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 </body>
